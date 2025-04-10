@@ -1,0 +1,305 @@
+@page "/DashBoard"
+@page "/DashBoard/{ClientId:int}"
+@using BankAccountWeb.GetData
+@using BankAccountWeb.Models
+@inject GetData _getData
+@inject InsertData _insertData
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+@rendermode InteractiveServer
+
+@if (isLoading)
+{
+    <div class="d-flex justify-content-center mt-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <p class="text-center mt-3">Chargement en cours...</p>
+}
+else if (client == null)
+{
+    <div class="alert alert-danger" role="alert">
+        Client introuvable. <a href="/" class="alert-link">Retour à l'accueil</a>
+    </div>
+}
+else
+{
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                @if (!string.IsNullOrEmpty(transactionResult))
+                {
+                    <div class="alert @(transactionResult.Contains("succès") ? "alert-success" : "alert-danger") mt-3" role="alert">
+                        @transactionResult
+                    </div>
+                }
+                <h3 class="mb-4">Bienvenue @client.Prenom</h3>
+                <h4 class="mb-3">Vos comptes</h4>
+
+                <div class="row">
+                    @foreach (Compte account in accountList)
+                    {
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-header bg-primary text-white">
+                                    @account.Type
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Solde: @account.Solde.ToString("C")</h5>
+                                    <p class="card-text">Numéro de compte: @account.NumeroCompte</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="mt-4">
+                    <h4>Que souhaitez-vous faire ?</h4>
+                    <div class="btn-group mt-2">
+                        <button class="btn btn-primary" @onclick="ShowHistory">Voir les transactions</button>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#transferModal">
+                            Faire un virement
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Faire un dépot/retrait
+                        </button>
+                    </div>
+                </div>
+                
+                @if (isLoadingHistory)
+                {
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Chargement de l'historique...</span>
+                        </div>
+                    </div>
+                }
+                else if (showHistorySection && historyList != null)
+                {
+                    <div class="mt-4">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                                <span>Historique de vos transactions</span>
+                            </div>
+                            <div class="card-body">
+                                @if (!historyList.Any())
+                                {
+                                    <p>Aucune opération trouvée pour vos comptes.</p>
+                                }
+                                else
+                                {
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Type d'opération</th>
+                                                    <th>Montant</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var operation in historyList)
+                                                {
+                                                    <tr>
+                                                        <td>@operation.Date.ToString("dd/MM/yyyy HH:mm")</td>
+                                                        <td>@operation.Type</td>
+                                                        <td class="@(operation.RawType == "Retrait" || (operation.Type.Contains("sortant")) ? "text-danger" : "text-success")">
+                                                            @(operation.RawType == "Retrait" || (operation.Type.Contains("sortant")) ? $"-{operation.Montant:C}" : $"+{operation.Montant:C}")
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Depot retrait d'argent</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div>
+                            <RadzenText>Compte choisi</RadzenText>
+                            <RadzenDropDown TValue="string" @bind-Value="accountChoice" Data="listOfAccount"/>
+                        </div>
+                        <div>
+                            <RadzenText>Montant</RadzenText>
+                            <RadzenNumeric TValue="int" Placeholder="Votre montant" @bind-Value="montant"/>
+                        </div>
+                        <div>
+                            <RadzenText>Type</RadzenText>
+                            <RadzenDropDown TValue="string" @bind-Value="typeChoice" Data="listOfType"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" @onclick="ProcessTransaction">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="transferModal" tabindex="-1" aria-labelledby="transferModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="transferModalLabel">Effectuer un virement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div>
+                            <RadzenText>Compte émetteur</RadzenText>
+                            <RadzenDropDown TValue="string" @bind-Value="senderAccountChoice" Data="listOfAccount" />
+                        </div>
+                        <div>
+                            <RadzenText>Compte destinataire</RadzenText>
+                            <RadzenTextBox @bind-Value="receiverAccount" Placeholder="Numéro de compte destinataire" />
+                        </div>
+                        <div>
+                            <RadzenText>Montant</RadzenText>
+                            <RadzenNumeric TValue="int" Placeholder="Montant à transférer" @bind-Value="transferAmount" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" @onclick="ProcessTransfer">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int ClientId { get; set; }
+
+    public List<string> listOfAccount = [];
+    public List<string> listOfType = ["Depot", "Retrait"];
+    public string accountChoice;
+    public string typeChoice { get; set; } = "Depot";
+    public int montant = 100;
+    
+    private Client client;
+    private List<Compte> accountList;
+    private bool isLoading = true;
+    private string transactionResult;
+    
+    // Variables pour l'historique
+    private bool showHistorySection = false;
+    private bool isLoadingHistory = false;
+    private List<Class.HistoriqueViewModel> historyList = [];
+
+    public string senderAccountChoice;
+    public string receiverAccount;
+    public int transferAmount;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (ClientId == 0)
+        {
+            var uri = NavigationManager.ToAbsoluteUri(NavigationManager.Uri);
+
+            if (Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query).TryGetValue("id", out var idParam))
+            {
+                if (int.TryParse(idParam, out int id))
+                {
+                    ClientId = id;
+                }
+            }
+        }
+
+        try
+        {
+            if (ClientId > 0)
+            {
+                client = await _getData.GetClientInformations(ClientId);
+                accountList = await _getData.GetAccountInformations(ClientId);
+            }
+        }
+        finally
+        {
+            isLoading = false;
+        }
+        
+        listOfAccount = await _getData.GetClientAccount(ClientId);
+        if (listOfAccount.Any())
+        {
+            accountChoice = listOfAccount[0];
+        }
+    }
+
+    public async Task ProcessTransaction()
+    {
+        transactionResult = await _insertData.MoveMoney(accountChoice, montant, typeChoice == "Depot" ? 1 : 2);
+
+        if (transactionResult.Contains("succès"))
+        {
+            accountList = await _getData.GetAccountInformations(ClientId);
+            await JS.InvokeVoidAsync("closeModal", "exampleModal");
+            
+            // Rafraîchir l'historique si déjà affiché
+            if (showHistorySection)
+            {
+                await ShowHistory();
+            }
+        }
+        
+        StateHasChanged();
+    }
+
+    public async Task ProcessTransfer()
+    {
+        transactionResult = await _insertData.TransferMoney(senderAccountChoice, receiverAccount, transferAmount);
+
+        if (transactionResult.Contains("succès"))
+        {
+            accountList = await _getData.GetAccountInformations(ClientId);
+            await JS.InvokeVoidAsync("closeModal", "transferModal");
+
+            // Rafraîchir l'historique si déjà affiché
+            if (showHistorySection)
+            {
+                await ShowHistory();
+            }
+        }
+
+        StateHasChanged();
+    }
+
+    public async Task ShowHistory()
+    {
+        isLoadingHistory = true;
+        showHistorySection = true;
+        StateHasChanged();
+        
+        historyList = new List<Class.HistoriqueViewModel>();
+        
+        // Récupérer l'historique pour tous les comptes du client
+        foreach (var compte in accountList)
+        {
+            var history = await _getData.GetAccountHistory(compte.IdCompte);
+            historyList.AddRange(history);
+        }
+        
+        // Trier par date décroissante
+        historyList = historyList.OrderByDescending(h => h.Date).ToList();
+        
+        isLoadingHistory = false;
+        StateHasChanged();
+    }
+}

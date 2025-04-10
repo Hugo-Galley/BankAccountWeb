@@ -1,0 +1,88 @@
+2025-03-18 14:46:28.289 +01:00 [INF] User profile is available. Using '/Users/hugogalley/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-18 14:46:29.112 +01:00 [INF] Now listening on: https://localhost:7207
+2025-03-18 14:46:29.113 +01:00 [INF] Now listening on: http://localhost:5260
+2025-03-18 14:46:29.121 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-18 14:46:29.121 +01:00 [INF] Hosting environment: Development
+2025-03-18 14:46:29.122 +01:00 [INF] Content root path: /Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb
+2025-03-18 14:46:29.920 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-03-18 14:46:29.959 +01:00 [INF] Executing endpoint '/ (/)'
+2025-03-18 14:46:30.814 +01:00 [INF] Executed endpoint '/ (/)'
+2025-03-18 14:46:30.836 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 918.4497ms
+2025-03-18 14:46:30.840 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/bootstrap/bootstrap.min.css - null null
+2025-03-18 14:46:30.842 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/blazor.web.js - null null
+2025-03-18 14:46:30.838 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/Radzen.Blazor.js?v=6.2.6.0 - null null
+2025-03-18 14:46:30.836 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/css/material-base.css?v=6.2.6.0 - null null
+2025-03-18 14:46:30.836 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/app.css - null null
+2025-03-18 14:46:30.846 +01:00 [INF] Executing endpoint 'Blazor web static files'
+2025-03-18 14:46:30.836 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/BankAccountWeb.styles.css - null null
+2025-03-18 14:46:30.852 +01:00 [INF] The file /app.css was not modified
+2025-03-18 14:46:30.853 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/app.css - 304 null text/css 15.9962ms
+2025-03-18 14:46:30.853 +01:00 [INF] The file /bootstrap/bootstrap.min.css was not modified
+2025-03-18 14:46:30.854 +01:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-03-18 14:46:30.855 +01:00 [INF] Executed endpoint 'Blazor web static files'
+2025-03-18 14:46:30.855 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/blazor.web.js - 304 null text/javascript 13.3307ms
+2025-03-18 14:46:30.857 +01:00 [INF] The file /_content/Radzen.Blazor/Radzen.Blazor.js was not modified
+2025-03-18 14:46:30.857 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/Radzen.Blazor.js?v=6.2.6.0 - 304 null text/javascript 18.5522ms
+2025-03-18 14:46:30.858 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/bootstrap/bootstrap.min.css - 304 null text/css 18.098ms
+2025-03-18 14:46:30.882 +01:00 [INF] Sending file. Request path: '/BankAccountWeb.styles.css'. Physical path: '/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/obj/Debug/net8.0/scopedcss/bundle/BankAccountWeb.styles.css'
+2025-03-18 14:46:30.882 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/BankAccountWeb.styles.css - 200 5708 text/css 46.2737ms
+2025-03-18 14:46:30.897 +01:00 [INF] Sending file. Request path: '/_content/Radzen.Blazor/css/material-base.css'. Physical path: '/Users/hugogalley/.nuget/packages/radzen.blazor/6.2.6/staticwebassets/css/material-base.css'
+2025-03-18 14:46:30.897 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/css/material-base.css?v=6.2.6.0 - 200 649753 text/css 60.6585ms
+2025-03-18 14:46:30.985 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2 - null null
+2025-03-18 14:46:30.987 +01:00 [INF] The file /_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2 was not modified
+2025-03-18 14:46:30.988 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2 - 304 null font/woff2 2.1437ms
+2025-03-18 14:46:31.069 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_blazor/initializers - null null
+2025-03-18 14:46:31.070 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-18 14:46:31.090 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-18 14:46:31.090 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_blazor/initializers - 200 null application/json; charset=utf-8 20.7082ms
+2025-03-18 14:46:31.104 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7207/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-03-18 14:46:31.106 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-18 14:46:31.120 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-18 14:46:31.121 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7207/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 16.291ms
+2025-03-18 14:46:31.156 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7207/_blazor?id=7doFM1G3Sm4qi9tsrvnfNw - null null
+2025-03-18 14:46:31.156 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-18 14:46:36.061 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/Register - null null
+2025-03-18 14:46:36.062 +01:00 [INF] Executing endpoint '/Register (/Register)'
+2025-03-18 14:46:36.137 +01:00 [INF] Executed endpoint '/Register (/Register)'
+2025-03-18 14:46:36.138 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/Register - 200 null text/html; charset=utf-8 77.0947ms
+2025-03-18 14:47:01.327 +01:00 [INF] Le client à bien été crée avec son compte
+2025-03-18 14:47:26.554 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-03-18 14:47:26.554 +01:00 [INF] Executing endpoint '/ (/)'
+2025-03-18 14:47:26.596 +01:00 [INF] Executed endpoint '/ (/)'
+2025-03-18 14:47:26.596 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 42.0528ms
+2025-03-18 14:48:06.471 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/counter - null null
+2025-03-18 14:48:06.471 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/counter - 404 0 null 0.6114ms
+2025-03-18 14:48:06.472 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7207/counter, Response status code: 404
+2025-03-18 14:48:07.904 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-03-18 14:48:07.905 +01:00 [INF] Executing endpoint '/ (/)'
+2025-03-18 14:48:07.923 +01:00 [INF] Executed endpoint '/ (/)'
+2025-03-18 14:48:07.923 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 18.826ms
+2025-03-18 14:48:08.987 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/weather - null null
+2025-03-18 14:48:08.987 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/weather - 404 0 null 0.4368ms
+2025-03-18 14:48:08.988 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7207/weather, Response status code: 404
+2025-03-18 14:48:09.997 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-03-18 14:48:09.997 +01:00 [INF] Executing endpoint '/ (/)'
+2025-03-18 14:48:10.020 +01:00 [INF] Executed endpoint '/ (/)'
+2025-03-18 14:48:10.020 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 23.534ms
+2025-03-18 14:48:11.068 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/counter - null null
+2025-03-18 14:48:11.069 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/counter - 404 0 null 0.5635ms
+2025-03-18 14:48:11.069 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7207/counter, Response status code: 404
+2025-03-18 14:48:12.104 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-03-18 14:48:12.106 +01:00 [INF] Executing endpoint '/ (/)'
+2025-03-18 14:48:12.130 +01:00 [INF] Executed endpoint '/ (/)'
+2025-03-18 14:48:12.131 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 26.4154ms
+2025-03-18 14:48:13.019 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-03-18 14:48:13.020 +01:00 [INF] Executing endpoint '/ (/)'
+2025-03-18 14:48:13.040 +01:00 [INF] Executed endpoint '/ (/)'
+2025-03-18 14:48:13.041 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 21.2999ms
+2025-03-18 14:48:13.736 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-03-18 14:48:13.736 +01:00 [INF] Executing endpoint '/ (/)'
+2025-03-18 14:48:13.760 +01:00 [INF] Executed endpoint '/ (/)'
+2025-03-18 14:48:13.761 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 25.4271ms
+2025-03-18 14:48:19.882 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7207/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryEqEwnZ3wgNBzc5YF 359
+2025-03-18 14:48:19.882 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-18 14:48:19.919 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-18 14:48:19.919 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7207/_blazor?id=7doFM1G3Sm4qi9tsrvnfNw - 101 null null 108766.8485ms
+2025-03-18 14:48:19.929 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-03-18 14:48:19.929 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7207/_blazor/disconnect - 200 0 null 46.787ms
+2025-03-18 14:48:23.139 +01:00 [INF] Application is shutting down...

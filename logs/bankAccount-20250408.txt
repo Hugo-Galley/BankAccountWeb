@@ -1,0 +1,238 @@
+2025-04-08 09:05:27.196 +02:00 [INF] User profile is available. Using '/Users/hugogalley/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-08 09:05:27.561 +02:00 [INF] Now listening on: https://localhost:7207
+2025-04-08 09:05:27.561 +02:00 [INF] Now listening on: http://localhost:5260
+2025-04-08 09:05:27.564 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-08 09:05:27.564 +02:00 [INF] Hosting environment: Development
+2025-04-08 09:05:27.564 +02:00 [INF] Content root path: /Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb
+2025-04-08 09:05:28.253 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-04-08 09:05:28.295 +02:00 [INF] Executing endpoint '/ (/)'
+2025-04-08 09:05:28.929 +02:00 [INF] Executed endpoint '/ (/)'
+2025-04-08 09:05:28.933 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 682.4599ms
+2025-04-08 09:05:28.953 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/bootstrap/bootstrap.min.css - null null
+2025-04-08 09:05:28.953 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/BankAccountWeb.styles.css - null null
+2025-04-08 09:05:28.954 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/css/material-base.css?v=6.2.6.0 - null null
+2025-04-08 09:05:28.953 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/app.css - null null
+2025-04-08 09:05:28.956 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/js/site.js - null null
+2025-04-08 09:05:28.958 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/blazor.web.js - null null
+2025-04-08 09:05:28.958 +02:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-08 09:05:28.962 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/Radzen.Blazor.js?v=6.2.6.0 - null null
+2025-04-08 09:05:28.977 +02:00 [INF] Sending file. Request path: '/app.css'. Physical path: '/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/wwwroot/app.css'
+2025-04-08 09:05:28.978 +02:00 [INF] Sending file. Request path: '/_content/Radzen.Blazor/Radzen.Blazor.js'. Physical path: '/Users/hugogalley/.nuget/packages/radzen.blazor/6.2.6/staticwebassets/Radzen.Blazor.js'
+2025-04-08 09:05:28.978 +02:00 [INF] Sending file. Request path: '/bootstrap/bootstrap.min.css'. Physical path: '/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/wwwroot/bootstrap/bootstrap.min.css'
+2025-04-08 09:05:28.978 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/app.css - 200 2540 text/css 24.9612ms
+2025-04-08 09:05:28.978 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/Radzen.Blazor.js?v=6.2.6.0 - 200 91280 text/javascript 15.9408ms
+2025-04-08 09:05:28.978 +02:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/wwwroot/js/site.js'
+2025-04-08 09:05:28.985 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/js/site.js - 200 130 text/javascript 28.9106ms
+2025-04-08 09:05:28.979 +02:00 [INF] Sending file. Request path: '/BankAccountWeb.styles.css'. Physical path: '/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/obj/Debug/net8.0/scopedcss/bundle/BankAccountWeb.styles.css'
+2025-04-08 09:05:28.987 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/BankAccountWeb.styles.css - 200 5708 text/css 33.8995ms
+2025-04-08 09:05:28.979 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/bootstrap/bootstrap.min.css - 200 162720 text/css 26.0756ms
+2025-04-08 09:05:28.989 +02:00 [INF] Sending file. Request path: '/_content/Radzen.Blazor/css/material-base.css'. Physical path: '/Users/hugogalley/.nuget/packages/radzen.blazor/6.2.6/staticwebassets/css/material-base.css'
+2025-04-08 09:05:28.977 +02:00 [INF] Sending file. Request path: '/_framework/blazor.web.js'. Physical path: 'N/A'
+2025-04-08 09:05:28.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/css/material-base.css?v=6.2.6.0 - 200 649753 text/css 38.2127ms
+2025-04-08 09:05:28.992 +02:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-08 09:05:28.993 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/blazor.web.js - 200 187457 text/javascript 34.5557ms
+2025-04-08 09:05:29.030 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/fonts/RobotoFlex.woff2 - null null
+2025-04-08 09:05:29.035 +02:00 [INF] Sending file. Request path: '/_content/Radzen.Blazor/fonts/RobotoFlex.woff2'. Physical path: '/Users/hugogalley/.nuget/packages/radzen.blazor/6.2.6/staticwebassets/fonts/RobotoFlex.woff2'
+2025-04-08 09:05:29.035 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/fonts/RobotoFlex.woff2 - 200 747316 font/woff2 5.299ms
+2025-04-08 09:05:29.137 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2 - null null
+2025-04-08 09:05:29.138 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_blazor/initializers - null null
+2025-04-08 09:05:29.138 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:05:29.148 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:05:29.148 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_blazor/initializers - 200 null application/json; charset=utf-8 9.7328ms
+2025-04-08 09:05:29.153 +02:00 [INF] Sending file. Request path: '/_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2'. Physical path: '/Users/hugogalley/.nuget/packages/radzen.blazor/6.2.6/staticwebassets/fonts/MaterialSymbolsOutlined.woff2'
+2025-04-08 09:05:29.153 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2 - 200 973704 font/woff2 16.6248ms
+2025-04-08 09:05:29.157 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7207/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-04-08 09:05:29.159 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:05:29.164 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:05:29.164 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7207/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 6.9194ms
+2025-04-08 09:05:29.196 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/favicon.png - null null
+2025-04-08 09:05:29.198 +02:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: '/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/wwwroot/favicon.png'
+2025-04-08 09:05:29.198 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/favicon.png - 200 1148 image/png 1.5216ms
+2025-04-08 09:05:29.231 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7207/_blazor?id=lbxMkz8fZeeE3370mc4YHQ - null null
+2025-04-08 09:05:29.232 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:05:36.475 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/Register - null null
+2025-04-08 09:05:36.476 +02:00 [INF] Executing endpoint '/Register (/Register)'
+2025-04-08 09:05:36.539 +02:00 [INF] Executed endpoint '/Register (/Register)'
+2025-04-08 09:05:36.540 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/Register - 200 null text/html; charset=utf-8 65.0365ms
+2025-04-08 09:06:09.542 +02:00 [INF] Le client à bien été crée avec son compte
+2025-04-08 09:06:11.047 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-04-08 09:06:11.047 +02:00 [INF] Executing endpoint '/ (/)'
+2025-04-08 09:06:11.077 +02:00 [INF] Executed endpoint '/ (/)'
+2025-04-08 09:06:11.077 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 30.3984ms
+2025-04-08 09:06:54.807 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-04-08 09:06:54.807 +02:00 [INF] Executing endpoint '/ (/)'
+2025-04-08 09:06:54.829 +02:00 [INF] Executed endpoint '/ (/)'
+2025-04-08 09:06:54.829 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 22.3509ms
+2025-04-08 09:06:54.834 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7207/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryt1LYFiiYGGuhYhRo 359
+2025-04-08 09:06:54.834 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:06:54.849 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/blazor.web.js - null null
+2025-04-08 09:06:54.850 +02:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-08 09:06:54.850 +02:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-08 09:06:54.851 +02:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-08 09:06:54.851 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/blazor.web.js - 304 null text/javascript 2.0747ms
+2025-04-08 09:06:54.855 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:06:54.855 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7207/_blazor?id=lbxMkz8fZeeE3370mc4YHQ - 101 null null 85626.5066ms
+2025-04-08 09:06:54.859 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:06:54.859 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7207/_blazor/disconnect - 200 0 null 25.3556ms
+2025-04-08 09:06:54.863 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_blazor/initializers - null null
+2025-04-08 09:06:54.863 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:06:54.863 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:06:54.863 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_blazor/initializers - 200 null application/json; charset=utf-8 0.4144ms
+2025-04-08 09:06:54.875 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7207/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-04-08 09:06:54.875 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:06:54.880 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:06:54.881 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7207/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 5.5573ms
+2025-04-08 09:06:54.905 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7207/_blazor?id=EMthGIUbP39Q37iXbAJMFQ - null null
+2025-04-08 09:06:54.906 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:07:06.954 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/Register - null null
+2025-04-08 09:07:06.955 +02:00 [INF] Executing endpoint '/Register (/Register)'
+2025-04-08 09:07:06.978 +02:00 [INF] Executed endpoint '/Register (/Register)'
+2025-04-08 09:07:06.978 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/Register - 200 null text/html; charset=utf-8 23.8197ms
+2025-04-08 09:07:21.414 +02:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 100), @p2='?' (Size = 4000), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Client` (`create_at`, `Mail`, `mdp`, `Nom`, `Prenom`, `Tel`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT `Id_Client`
+FROM `Client`
+WHERE ROW_COUNT() = 1 AND `Id_Client` = LAST_INSERT_ID();
+2025-04-08 09:07:21.710 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'BankAccountWeb.Models.BankAccountContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Duplicate entry 'test' for key 'Mail'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1081
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 131
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 487
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Duplicate entry 'test' for key 'Mail'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1081
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 131
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 487
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-04-08 09:07:21.725 +02:00 [WRN] Unhandled exception rendering component: An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Duplicate entry 'test' for key 'Mail'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1081
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 131
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 487
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BankAccountWeb.InsertData.CreateClient(String name, String surname, String phoneNumber, String email, String password, String typeAccount, Int32 initialDeposit) in /Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/InsertData/InsertData.cs:line 33
+   at BankAccountWeb.Components.Pages.Register.RegsiterUser() in /Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/Components/Pages/Register.razor:line 53
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+   at Radzen.Blazor.RadzenButton.OnClick(MouseEventArgs args)
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+2025-04-08 09:07:21.737 +02:00 [ERR] Unhandled exception in circuit 'dHAwXufvhCD2QGabBbpCP3WJJGGkLlWEpS1Uaxe0ylk'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Duplicate entry 'test' for key 'Mail'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1081
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 131
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 487
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BankAccountWeb.InsertData.CreateClient(String name, String surname, String phoneNumber, String email, String password, String typeAccount, Int32 initialDeposit) in /Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/InsertData/InsertData.cs:line 33
+   at BankAccountWeb.Components.Pages.Register.RegsiterUser() in /Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/Components/Pages/Register.razor:line 53
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+   at Radzen.Blazor.RadzenButton.OnClick(MouseEventArgs args)
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+2025-04-08 09:07:21.743 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:07:21.743 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7207/_blazor?id=EMthGIUbP39Q37iXbAJMFQ - 101 null null 26838.9124ms
+2025-04-08 09:07:36.322 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/Register - null null
+2025-04-08 09:07:36.323 +02:00 [INF] Executing endpoint '/Register (/Register)'
+2025-04-08 09:07:36.338 +02:00 [INF] Executed endpoint '/Register (/Register)'
+2025-04-08 09:07:36.338 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/Register - 200 null text/html; charset=utf-8 15.9849ms
+2025-04-08 09:07:36.343 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7207/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryPJ2Tkw1lyi7a5ExY 359
+2025-04-08 09:07:36.343 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:07:36.344 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:07:36.344 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7207/_blazor/disconnect - 200 0 null 1.5453ms
+2025-04-08 09:07:36.350 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/blazor.web.js - null null
+2025-04-08 09:07:36.350 +02:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-08 09:07:36.351 +02:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-08 09:07:36.351 +02:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-08 09:07:36.351 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/blazor.web.js - 304 null text/javascript 0.4863ms
+2025-04-08 09:07:36.363 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/_blazor/initializers - null null
+2025-04-08 09:07:36.363 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:07:36.364 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:07:36.364 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/_blazor/initializers - 200 null application/json; charset=utf-8 0.9054ms
+2025-04-08 09:07:36.372 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7207/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-04-08 09:07:36.372 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:07:36.372 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:07:36.372 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7207/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 0.488ms
+2025-04-08 09:07:36.398 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7207/_blazor?id=c4OA8C625xV4EjGA2bQ92w - null null
+2025-04-08 09:07:36.398 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:07:50.974 +02:00 [INF] Le client à bien été crée avec son compte
+2025-04-08 09:07:52.479 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/ - null null
+2025-04-08 09:07:52.479 +02:00 [INF] Executing endpoint '/ (/)'
+2025-04-08 09:07:52.500 +02:00 [INF] Executed endpoint '/ (/)'
+2025-04-08 09:07:52.501 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/ - 200 null text/html; charset=utf-8 21.7813ms
+2025-04-08 09:07:57.054 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7207/Dashboard?id=30 - null null
+2025-04-08 09:07:57.055 +02:00 [INF] Executing endpoint '/DashBoard (/DashBoard)'
+2025-04-08 09:07:57.095 +02:00 [INF] Executed endpoint '/DashBoard (/DashBoard)'
+2025-04-08 09:07:57.095 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7207/Dashboard?id=30 - 200 null text/html; charset=utf-8 41.4396ms
+2025-04-08 09:08:48.608 +02:00 [INF] Application is shutting down...
+2025-04-08 09:08:48.608 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-08 09:08:48.608 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7207/_blazor?id=c4OA8C625xV4EjGA2bQ92w - 101 null null 72212.8272ms

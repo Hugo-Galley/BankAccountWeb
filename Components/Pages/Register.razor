@@ -1,0 +1,77 @@
+@page "/Register"
+@rendermode InteractiveServer
+@inject InsertData InsertData
+@inject NavigationManager _NavigationManager
+@inject NotificationService NotificationService
+
+<PageTitle>Home</PageTitle>
+
+<RadzenText class="d-flex justify-content-center fs-1">Inscrivez vous</RadzenText>
+@if (showError)
+{
+    <div class="alert alert-danger d-flex align-items-center w-25 mx-auto mb-3 shadow-sm" role="alert">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+        <div>
+           @error
+        </div>
+    </div>
+}
+
+<div class="d-flex flex-column justify-content-center h-100 m-auto align-items-center">
+    @if (!string.IsNullOrEmpty(informations))
+    {
+        <div class="alert alert-success mt-3 mb-3">
+            @informations
+        </div>
+    }
+    <RadzenText>Rentrer vos information</RadzenText>
+    <div class="d-flex flex-column justify-content-center align-items-center w-100">
+        <RadzenTextBox class="w-25 m-2" @bind-value="name" Placeholder="Votre nom ..."/>
+        <RadzenTextBox class="w-25 m-2" @bind-value="surname" Placeholder="Votre prenom ..."/>
+        <RadzenTextBox class="w-25 m-2" @bind-value="phoneNumber" Placeholder="Votre numéro de telephone ..."/>
+        <RadzenTextBox class="w-25 m-2" @bind-value="email" Placeholder="Votre email ..."/>
+        <RadzenTextBox class="w-25 m-2" @bind-value="password" Placeholder="Votre mot de passe ..."/>
+        <RadzenDropDown class="w-25 m-2" TValue="string" @bind-value="typeAccount" Data="typeAccountList"/>
+        <RadzenNumeric TValue="int" class="w-25 m-2" @bind-value="initialDeposit" Placeholder="Votre depot initial ..."/>
+    </div>
+
+
+    <RadzenButton Click="@(args => RegsiterUser())" class="mt-3 w-25">S'inscrire</RadzenButton>
+
+
+</div>
+
+@code{
+    private string name;
+    private string surname;
+    private string phoneNumber;
+    private string email;
+    private string password;
+    private string typeAccount;
+    private int initialDeposit;
+    public string informations;
+    public bool showError = false;
+    public string error;
+    private List<string> typeAccountList = ["Compte Courant", "Compte Epargne"];
+
+    protected override void OnInitialized()
+    {
+      
+    }
+
+    public async Task RegsiterUser()
+    {
+        error = await InsertData.CreateClient(name, surname, phoneNumber, email, password, typeAccount, initialDeposit);
+        if (error == "Inscription effectuée avec succès")
+        {
+            _NavigationManager.NavigateTo("/");
+        }
+        else
+        {
+            showError = true;
+        }
+        
+
+    }
+    
+}

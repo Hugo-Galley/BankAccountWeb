@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BankAccountWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c8d168ea26e180ed472dc6744b5205398394146")]
 [assembly: System.Reflection.AssemblyProductAttribute("BankAccountWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BankAccountWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

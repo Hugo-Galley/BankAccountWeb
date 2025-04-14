@@ -145,3 +145,11 @@
 /Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/Serilog.Sinks.Console.dll
 /Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/Serilog.Sinks.Debug.dll
 /Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/Serilog.Sinks.File.dll
+/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/obj/Debug/net8.0/BankAccountWeb.sourcelink.json
+/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/Castle.Core.dll
+/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/Moq.dll
+/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/xunit.abstractions.dll
+/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/xunit.assert.dll
+/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/xunit.core.dll
+/Users/hugogalley/Documents/Cours EPSI/Cs/BankAccountWeb/BankAccountWeb/bin/Debug/net8.0/xunit.execution.dotnet.dll
